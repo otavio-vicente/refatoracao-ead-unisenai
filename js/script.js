@@ -7,15 +7,19 @@ function adicionarusuario(){
     var email = document.getElementById("emailUsuario").value;
     var msgErro = document.getElementById("mensagemErro");
 
+    // Limpa a mensagem de erro se os campos estiverem preenchidos
+    msgErro.style.display = "none";
+
     if (nome === "" || email === "") {
         msgErro.textContent = "Preencha todos os campos!";
         msgErro.style.display = "block"; // Exibe a mensagem de erro
         return;
-    }
-
-    // Limpa a mensagem de erro se os campos estiverem preenchidos
-    msgErro.style.display = "none";
-
+    } else if (!email.includes("@") && !email.includes(".")) {
+        msgErro.textContent = "Encontrada ausência de '@' ou '.' favor inserir um email válido!";
+        msgErro.style.display = "block"; // Exibe a mensagem de erro
+        return;
+    } 
+    
     var usuario = { nome: nome, email: email };
     usuariosArray.push(usuario);
 
@@ -27,6 +31,7 @@ function adicionarusuario(){
 
     document.getElementById("nomeUsuario").value = "";
     document.getElementById("emailUsuario").value = "";
+        
 }
 
 function removeuser(email) {

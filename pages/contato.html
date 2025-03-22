@@ -25,6 +25,8 @@
             <label for="message">Mensagem:</label>
             <textarea id="message" name="message" rows="3"></textarea>
 
+            <p id="mensagemErro" style="color: red; display: none;"></p>
+
             <button id="btn-add" type="submit">Enviar</button>
         </form>
     </div>
@@ -39,26 +41,34 @@
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
+            var msgErro = document.getElementById("mensagemErro");
+
+             // Limpa a mensagem de erro se os campos estiverem preenchidos
+            msgErro.style.display = "none";
     
             console.log("Valores recebidos:", { name, email, message }); // Debug
     
             if (!name) {
-                alert("Por favor, preencha o campo Nome.");
+                msgErro.textContent = "Preencha o campo Nome!";
+                msgErro.style.display = "block"; // Exibe a mensagem de erro
                 return;
             }
     
             if (!email) {
-                alert("Por favor, preencha o campo Email.");
+                msgErro.textContent = "Preencha o campo Email!";
+                msgErro.style.display = "block"; // Exibe a mensagem de erro
                 return;
             }
     
             if (!validateEmail(email)) {
-                alert("Por favor, insira um e-mail válido.");
+                msgErro.textContent = "Preencha o campo Email com um formato válido!";
+                msgErro.style.display = "block"; // Exibe a mensagem de erro
                 return;
             }
     
             if (!message) {
-                alert("Por favor, preencha o campo Mensagem.");
+                msgErro.textContent = "Preencha o campo Mensagem!";
+                msgErro.style.display = "block"; // Exibe a mensagem de erro
                 return;
             }
     
@@ -66,7 +76,7 @@
             console.log("Email:", email);
             console.log("Mensagem:", message);
     
-            alert("Formulário interceptado! Não quero enviar pro back.");
+            // alert("Formulário interceptado! Não quero enviar pro back.");
 
             form.reset();
         });
@@ -75,6 +85,10 @@
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(email);
         }
+
+        document.getElementById("navigateBtn").addEventListener("click", function() {
+            window.location.href = "../index.html";  // Redireciona para 'index.html' ao clicar no botão
+        });
     </script>
     
 
