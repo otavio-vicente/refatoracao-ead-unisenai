@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head><title>Cadastro de Usuários</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   
+
+    
+
+    <section class="container">
+        <button class="navigateBtn" id="navigateBtnSobre" style="margin-bottom: 1rem;">Ir para o Sobre Nós</button>
+        <button  id="navigateBtnContato" class="navigateBtn">Ir para a Tela de Contato</button>
+
+        <h1>Cadastro de Usuários</h1>
+        
+        <form action="#" method="post" name="formCadastro" id="formCadastro">
+            <label for="nome" name="nome">Nome:</label>
+            <input type="text" for="nome" id="nomeUsuario" required> <br>
+    
+            <label for="" name="nomeUsuario" id="nomeUsuario">Email:</label>
+            <input type="email" for="email" id="emailUsuario" required><br>
+            
+            <button id="btn-add" onclick="adicionarusuario()">Adicionar</button>
+        </form>
+    
+        <div>
+            <h2>Usuários Cadastrados</h2>
+            <ul id="listausers"></ul>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+
+    <script>
+        document.getElementById("navigateBtnContato").addEventListener("click", function() {
+            window.location.href = "pages/contato.html";  // Redireciona para 'contato.html' ao clicar no botão
+        });
+        document.getElementById("navigateBtnSobre").addEventListener("click", function() {
+            window.location.href = "pages/sobre.html";  // Redireciona para 'contato.html' ao clicar no botão
+        });
+    </script>
+
+</body>
+</html>
+
+

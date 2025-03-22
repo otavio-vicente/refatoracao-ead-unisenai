@@ -8,13 +8,13 @@ Os alunos devem realizar uma **análise crítica** de um código legado, identif
 ## 📌 Cenário
 Sua equipe foi designada por uma empresa para atuar na **refatoração de um código antigo**, tornando-o mais **organizado, eficiente e sustentável**. No entanto, ao iniciar a análise, foram identificados diversos problemas de **débito técnico**, tais como:
 
-✅ Uso excessivo de estilos inline e interno
-✅ Código duplicado
-✅ Layout quebrado e fora dos padrões de UI/UX
-✅ Falta de boas práticas de acessibilidade
-✅ Código JavaScript pouco modular
-✅ Falta de padrões de nomenclaturas
-✅ Validações de JavaScript não funcionais
+✅ Uso excessivo de estilos inline e interno<br>
+✅ Código duplicado<br>
+✅ Layout quebrado e fora dos padrões de UI/UX<br>
+✅ Falta de boas práticas de acessibilidade<br>
+✅ Código JavaScript pouco modular<br>
+✅ Falta de padrões de nomenclaturas<br>
+✅ Validações de JavaScript não funcionais<br>
 
 ---
 
@@ -50,10 +50,12 @@ Sua equipe foi designada por uma empresa para atuar na **refatoração de um có
 🔸 **Sem redirecionamento adequado** → Garantir navegação correta.<br>
 🔸 **Conteúdo incoerente** → Atualizar para um texto adequado sobre o projeto.<br>
 
-### 🔹 Arquivo `style.css`
-🔸 **Nome incorreto (`style.CSS`)** → Renomear para `style.css`.<br>
+### 🔹 Arquivo `styles.css`
+🔸 **Nome incorreto (`styles.CSS`)** → Renomear para `styles.css`.<br>
 🔸 **Falta de indentação** → Ajustar formatação.<br>
 🔸 **Redundância de código** → Remover estilos repetidos e organizar as classes.<br>
+🔸 **Redundância de código** → Remover estilos repetidos e organizar as classes.<br>
+🔸 **Melhoria da estrutura visual** → Tornar o layout mais responsivo e harmonioso.
 
 ### 🔹 Scripts
 🔸 **Distribuição excessiva de pastas** → Reestruturar organização dos arquivos.<br>
@@ -74,9 +76,7 @@ Sua equipe foi designada por uma empresa para atuar na **refatoração de um có
 📌 **Correções de UI/UX:**
 ✔️ Ajustar o layout para torná-lo responsivo.
 ✔️ Aplicar padrões modernos de design.
-
-📌 **Acessibilidade:**
-✔️ Incluir boas práticas como ARIA, contraste adequado e navegação por teclado.
+✔️ Melhorar a experiência visual através do CSS otimizado.
 
 📌 **Melhoria do JavaScript:**
 ✔️ Refatorar validações de formulários.
