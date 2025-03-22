@@ -16,11 +16,13 @@
         <h1>Cadastro de Usuários</h1>
         
         <form action="#" method="post" name="formCadastro" id="formCadastro">
-            <label for="nome" name="nome">Nome:</label>
-            <input type="text" for="nome" id="nomeUsuario" required> <br>
+            <label for="nomeUsuario" >Nome:</label>
+            <input type="text" name="nomeUsuario" id="nomeUsuario" required> <br>
     
-            <label for="" name="nomeUsuario" id="nomeUsuario">Email:</label>
-            <input type="email" for="email" id="emailUsuario" required><br>
+            <label for="emailUsuario">Email:</label>
+            <input type="email" name="emailUsuario" id="emailUsuario" required><br>
+
+            <p id="mensagemErro" style="color: red; display: none;"></p>
             
             <button id="btn-add" onclick="adicionarusuario()">Adicionar</button>
         </form>
