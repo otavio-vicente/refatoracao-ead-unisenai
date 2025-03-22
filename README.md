@@ -117,6 +117,8 @@ Sua equipe foi designada por uma empresa para atuar na **refatoração de um có
 
 ---
 
+Obs: O código de base utilizado para desenvolver essa atividade também está disponível no repositório (ead-5.zip). 
+
 ## 🤝 Contribuições
 📌 Caso deseje contribuir com melhorias, entre em contato!
 
